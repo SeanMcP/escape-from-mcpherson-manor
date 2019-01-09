@@ -1,4 +1,5 @@
 @import './variables.css';
+@import './animations';
 
 body {
     background: #222;
@@ -33,7 +34,6 @@ button {
 #Main {
     display: flex;
     flex-direction: column;
-    flex: 1;
 }
 
 #Screen {
@@ -49,6 +49,10 @@ button {
 #Screen > * {
     margin-left: 2rem;
     margin-right: 2rem;
+}
+
+#Screen > *:last-child {
+    animation: fade-in 100ms ease-in-out;
 }
 
 #Controls {
@@ -83,6 +87,29 @@ button {
     font-family: var(--mono);
 }
 
+#Help {
+    flex: 1;
+}
+
+#Help code {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    font-size: 1.25rem;
+    padding: 2px 4px;
+}
+
 #Footer {
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
+}
+
+#Footer a,
+#Footer a:visited {
+    color: rgb(187, 60, 60);
+    text-decoration: none;
+}
+
+#Footer a:hover,
+#Footer a:active {
+    text-decoration: underline;
 }
