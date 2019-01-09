@@ -8,9 +8,11 @@ body {
     margin: 0;
 }
 
-button {
+button, summary {
     cursor: pointer;
 }
+
+code { font-family: var(--mono) }
 
 .--site-block {
     padding: 1rem;
@@ -94,8 +96,7 @@ button {
 #Help code {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 2px;
-    font-size: 1.25rem;
-    padding: 2px 4px;
+    padding: 0.125rem 0.25rem;
 }
 
 #Footer {
