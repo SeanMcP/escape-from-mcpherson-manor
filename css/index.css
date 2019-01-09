@@ -85,6 +85,10 @@ code { font-family: var(--mono) }
     color: white;
 }
 
+#Controls > button:hover {
+    color: var(--red);
+}
+
 #Controls > button kbd {
     font-family: var(--mono);
 }
@@ -114,7 +118,7 @@ code { font-family: var(--mono) }
 
 #Footer a,
 #Footer a:visited {
-    color: rgb(187, 60, 60);
+    color: var(--red);
     text-decoration: none;
 }
 

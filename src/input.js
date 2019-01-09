@@ -3,8 +3,10 @@ import play from './play'
 
 function getInput() {
     const { value } = Input
-    play(value)
-    Input.value = ''
+    if (value) {
+        play(value)
+        Input.value = ''
+    }
 }
 
 Enter.addEventListener('click', getInput)
