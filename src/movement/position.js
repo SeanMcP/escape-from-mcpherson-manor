@@ -1,10 +1,14 @@
 import { writeToScreen } from '../utils'
 
 export let currentPosition = [0, 0]
-export let positionHistory = [ [...currentPosition] ]
+export let positionHistory = [[...currentPosition]]
 
 function writePosition(direction) {
-    writeToScreen(`You travel ${direction}. Current location: ${currentPosition.join(', ')}`)
+    writeToScreen(
+        `You travel ${direction}. Current location: ${currentPosition.join(
+            ', '
+        )}`
+    )
 }
 
 export function go(direction) {

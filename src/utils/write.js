@@ -2,11 +2,11 @@ import marked from 'marked'
 import { Screen } from './elements'
 
 function scrollToBottom() {
-    Screen.scrollTop = Screen.scrollHeight;
+    Screen.scrollTop = Screen.scrollHeight
 }
 
 export function clearScreen() {
-    while(Screen.firstChild) {
+    while (Screen.firstChild) {
         Screen.removeChild(Screen.firstChild)
     }
     writeToScreen('*Screen cleared*')
