@@ -93,6 +93,14 @@ code { font-family: var(--mono) }
     flex: 1;
 }
 
+#Help li:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+}
+
+#Help li ul {
+    margin-top: 0.5rem;
+}
+
 #Help code {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 2px;
