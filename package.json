@@ -1,0 +1,24 @@
+{
+  "name": "escape-from-mcpherson-manor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanmcp/escape-from-mcpherson-manor.git"
+  },
+  "author": "Sean McPherson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanmcp/escape-from-mcpherson-manor/issues"
+  },
+  "homepage": "https://github.com/seanmcp/escape-from-mcpherson-manor#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
