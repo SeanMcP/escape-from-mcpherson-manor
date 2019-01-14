@@ -53,10 +53,10 @@ code {
 }
 
 #Screen {
-    background: #1d1d1d;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 0.25rem;
     font-family: var(--mono);
-    height: 50vh;
+    height: 40vh;
     overflow-y: auto;
     padding: 1rem 0;
     width: 100%;
@@ -96,7 +96,7 @@ code {
 }
 
 #Controls>input {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 0.25rem;
     border-top-left-radius: 0.25rem;
     color: white;
@@ -119,6 +119,10 @@ code {
     margin-top: 1rem;
 }
 
+#Help li {
+    line-height: 150%;
+}
+
 #Help li:not(:last-of-type) {
     margin-bottom: 0.5rem;
 }
@@ -128,13 +132,13 @@ code {
 }
 
 #Help code {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 2px;
     padding: 0.125rem 0.25rem;
 }
 
 #Footer {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     text-align: center;
 }
 
@@ -147,4 +151,46 @@ code {
 #Footer a:hover,
 #Footer a:active {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    #Header {
+        text-align: center;
+    }
+
+    #Header h1 {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    #Header h1 span {
+        display: block;
+    }
+
+    #Header p {
+        display: none;
+    }
+
+    #Screen {
+        padding: 0;
+    }
+
+    #Screen>* {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #Controls {
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    #Controls>* {
+        grid-column: initial !important;
+        text-align: center;
+    }
+
+    #Controls>label {
+        padding-bottom: 0.5rem;
+    }
 }
