@@ -1,5 +1,5 @@
 import { writeToScreen } from '../utils'
-import { DIRECTIONS, abbrDirectionToFull } from './direction'
+import { DIRECTIONS, mapAbbrDirectionToFull } from './direction'
 import Room from '../classes/Room'
 
 export let currentPosition = [0, 0]
@@ -11,7 +11,9 @@ export const map = {
 function writePosition(direction) {
     writeToScreen(
         `You travel ${
-            direction.length === 1 ? abbrDirectionToFull[direction] : direction
+            direction.length === 1
+                ? mapAbbrDirectionToFull[direction]
+                : direction
         }. Current location: ${currentPosition.join(', ')}`
     )
 }
@@ -20,7 +22,11 @@ export function go(direction) {
     let userDidMove = true
     let shouldCreateNewRoom = true
     const currentRoom = map[currentPosition.join()]
-    if (currentRoom.exits.includes(direction[0])) {
+    const directionInitial = direction[0]
+    if (
+        currentRoom.exits.includes(directionInitial) ||
+        directionInitial === DIRECTIONS.back.abbr
+    ) {
         switch (direction) {
             case DIRECTIONS.north.full:
             case DIRECTIONS.north.abbr:
@@ -59,7 +65,7 @@ export function go(direction) {
             default:
                 return writeToScreen(`I don't recognize that direction.`)
         }
-    
+
         if (direction && userDidMove) {
             const currentPositionString = currentPosition.join()
             if (shouldCreateNewRoom && !map[currentPositionString]) {

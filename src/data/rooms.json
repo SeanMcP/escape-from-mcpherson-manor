@@ -1,0 +1,38 @@
+{
+    "store room": {
+        "description": "A dark and dusty store room littered with cob-webs.",
+        "exits": 2
+    },
+    "bathroom": {
+        "description": "A polished bathroom.",
+        "exits": 2
+    },
+    "bedroom": {
+        "description": "A stuffy bedroom.",
+        "exits": 2
+    },
+    "dining room": {
+        "description": "A grand dining room.",
+        "exits": 3
+    },
+    "hallway": {
+        "description": "A hallway filled with doors.",
+        "exits": 4
+    },
+    "kitchen": {
+        "description": "A well-stocked kitchen.",
+        "exits": 3
+    },
+    "library": {
+        "description": "A library filled with unread books.",
+        "exits": 2
+    },
+    "sitting room": {
+        "description": "A sitting room with ample sitting room.",
+        "exits": 3
+    },
+    "study": {
+        "description": "A study with a desk.",
+        "exits": 2
+    }
+}

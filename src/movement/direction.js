@@ -25,21 +25,21 @@ export const DIRECTIONS = {
     }
 }
 
-const listAbbrDirections = []
-const abbrDirectionToFull = {}
+export const abbrDirectionsInOrder = [
+    DIRECTIONS.north.abbr,
+    DIRECTIONS.east.abbr,
+    DIRECTIONS.south.abbr,
+    DIRECTIONS.west.abbr
+]
+const mapAbbrDirectionToFull = {}
 
 for (let key in DIRECTIONS) {
-    // for listAbbrDirections
-    if (key !== DIRECTIONS.back.full)
-        listAbbrDirections.push(DIRECTIONS[key].abbr)
-    
-        // for abbrDirectionToFull
-    abbrDirectionToFull[DIRECTIONS[key].abbr] = key
+    mapAbbrDirectionToFull[DIRECTIONS[key].abbr] = DIRECTIONS[key].full
 }
 
-export { listAbbrDirections, abbrDirectionToFull }
+export { mapAbbrDirectionToFull }
 
-export const oppositeDirection = {
+export const mapAbbrDirectionToOpposite = {
     [DIRECTIONS.north.abbr]: DIRECTIONS.south.abbr,
     [DIRECTIONS.east.abbr]: DIRECTIONS.west.abbr,
     [DIRECTIONS.south.abbr]: DIRECTIONS.north.abbr,
