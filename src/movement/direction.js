@@ -3,10 +3,6 @@ export const DIRECTIONS = {
         abbr: 'n',
         full: 'north'
     },
-    north: {
-        abbr: 'n',
-        full: 'north'
-    },
     east: {
         abbr: 'e',
         full: 'east'

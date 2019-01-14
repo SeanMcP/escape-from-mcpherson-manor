@@ -7,9 +7,9 @@ export function coinFlip() {
 }
 
 export function shuffle(array) {
-    let currentIndex = array.length,
-        temporaryValue,
-        randomIndex
+    let currentIndex = array.length
+    let temporaryValue
+    let randomIndex
 
     while (0 !== currentIndex) {
         randomIndex = Math.floor(Math.random() * currentIndex)
