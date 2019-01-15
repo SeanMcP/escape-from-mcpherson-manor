@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel serve index.html",
-    "build": "parcel build index.html --out-dir docs/",
+    "build": "parcel build index.html --out-dir ./docs/ --public-url ./escape-from-mcpherson-manor/",
     "lint": "./node_modules/.bin/eslint 'src/**/*.js'",
     "format": "prettier --write 'src/**/*.{js,json}'",
     "precommit": "npm run format && npm run lint"
