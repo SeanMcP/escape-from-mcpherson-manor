@@ -27,4 +27,4 @@ module.exports={"store room":{description:"A dark and dusty store room littered 
 },{"./utils/elements":"dsU/","./play":"5uq0"}],"H99C":[function(require,module,exports) {
 "use strict";require("./input"),console.log("Thank you for playing %cEscape from McPherson Manor%c!\n\nIf you liked this game, checkout some of my other projects:\n👉 https://github.com/seanmcp","font-style: italic","font-style: normal");
 },{"./input":"gFLk"}]},{},["H99C"], null)
-//# sourceMappingURL=docs/escape-from-mcpherson-manor/src.5dcc7dcb.map
+//# sourceMappingURL=escape-from-mcpherson-manor/docs/src.5dcc7dcb.map
