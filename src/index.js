@@ -1,5 +1,6 @@
 // On load
 import './input'
+import './intro'
 
 // eslint-disable-next-line
 console.log(
