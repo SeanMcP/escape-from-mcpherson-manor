@@ -17,4 +17,4 @@ Not one to leave a woman waiting, you agreed. As soon as work wraps up in the ev
 Traffic slowed your progress, but the bigger concern was the weather. Storm clouds blew in from the coast, thundering on the roof of your car and covering the roads. Your progress slowed to a crawl as the poor wiper blades labored to keep the windshield clear.
 `
 
-writeToScreen(intro)
+writeToScreen(intro, true)

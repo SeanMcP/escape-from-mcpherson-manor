@@ -12,9 +12,9 @@ export function clearScreen() {
     writeToScreen('*Screen cleared*')
 }
 
-export function writeToScreen(input) {
+export function writeToScreen(input, preventScroll) {
     Screen.innerHTML += marked(input)
-    scrollToBottom()
+    if (!preventScroll) scrollToBottom()
 }
 
 export function writeUserInput(input) {
