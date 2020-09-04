@@ -28,6 +28,6 @@
     "prettier": "^1.15.3"
   },
   "dependencies": {
-    "marked": "^0.6.0"
+    "marked": "^0.7.0"
   }
 }
